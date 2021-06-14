@@ -32,7 +32,7 @@ namespace BlackJack
         public static void Hit()
         {
             Settings.count += 1;
-            Settings.playerCards[Settings.count] = Cards.Deal();
+            Settings.playerCards[Settings.count] = Cards.DealCards();
             Console.WriteLine("\nYou were dealed a " + Settings.playerCards[Settings.count] + ".\nYour new total is " + Settings.total + ".");
             if (Settings.total.Equals(21))
             {

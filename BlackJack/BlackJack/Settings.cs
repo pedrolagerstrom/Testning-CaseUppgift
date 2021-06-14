@@ -17,8 +17,8 @@ namespace BlackJack
         public static void Setup()
         {
             dealerTotal = cardRandomizer.Next(15, 22);
-            playerCards[0] = Cards.Deal();
-            playerCards[1] = Cards.Deal();
+            playerCards[0] = Cards.DealCards();
+            playerCards[1] = Cards.DealCards();
 
             if (total.Equals(21))
             {

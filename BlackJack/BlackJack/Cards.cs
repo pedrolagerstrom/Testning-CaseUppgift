@@ -8,7 +8,7 @@ namespace BlackJack
 {
     public class Cards
     {
-        public static string Deal()
+        public static string DealCards()
         {
             string Card = "";
             int cards = Settings.cardRandomizer.Next(1, 14);
